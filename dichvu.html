@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> Khóa học </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&amp;subset=vietnamese"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+
+
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+
+
+	<script type="text/javascript" src="1.js"></script>
+
+
+	
+
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+	<link rel="stylesheet" href="1.css">
+	<link rel="stylesheet" href="vendor/clock.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+	<link rel="stylesheet" type="text/css" href="cssdata/truyenthong.css">
+</head>
+<style>
+	div#ex1 {
+		margin: 0 auto;
+		position: fixed;
+		top: 88px;
+		right: 0;
+		left: 0;
+		height: 80%;
+		max-width: 85%;
+		background: linear-gradient(45deg, #a93c3c, #0e3879de);
+
+	}
+</style>
+
+<body>
+
+
+
+	<div class="logovamenu header" id="wrapper">
+		<nav class="navbar navbar-light  fontroboto">
+
+			<header>
+				<div class=" inner-header container b1">
+					<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse"
+						data-target="#mtren">
+
+					</button>
+					<div class="collapse navbar-toggleable-xs" id="mtren">
+						<a class="navbar-brand text-xs-center text-sm-left" href="#">
+							<img class="logo" src="images/logo2.png" alt="">
+						</a>
+						<nav>
+							<ul class="main-menu nav navbar-nav float-sm-right" id="root">
+								<li class="nav-item">
+									<a class="nav-link" href="index.html">TRANG CHỦ</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="bantin.html">BẢN TIN</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="truyenthong.html">TRIỀU ĐẠI</a>
+									<div>
+										<ul class="subMenu">
+											<li><a href="tinchinh.html">Nhà Tiền Lý ( 544 - 620)</a></li>
+											<li><a href="tinchinh2.html">Nhà Đinh ( 968 - 980)</a></li>
+											<li><a href="tinchinh3.html">Nhà Tiền Lê ( 980 - 1009)</a></li>
+											<li><a href="tinchinh4.html">Nhà Lý ( 1009 - 1225)</a></li>
+											<li><a href="tinchinh5.html">Nhà Trần ( 1225 - 1400)</a></li>
+											<li><a href="tinchinh6.html">Nhà Hậu Lê-Lê Sơ ( 1428 - 1527)</a></li>
+											<li><a href="tinchinh7.html">Nhà Tây Sơn ( 1778 - 1802)</a></li>
+											<li><a href="tinchinh8.html">Nhà Nguyễn-Thời kỳ độc lập tự chủ ( 1802 -
+													1883)</a></li>
+											<li><a href="tinchinh9.html">Nhà Nguyễn-Thời kỳ Pháp thuộc ( 1883 -
+													1945)</a></li>
+											<li><a href="tinchinh10.html">Thời kỳ đổi mới ( 1945 - nay)</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="dichvu.html">KHÓA HỌC</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="thoidai.html">THỜI ĐẠI</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contact.html">LIÊN HỆ</a>
+								</li>
+								<li class="nav-item log">
+									<a class="nav-link btn btn-warning wow bounce" data-wow-iteration="3"
+										href="signUp-signIn.html">ĐĂNG NHẬP</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+		</nav>
+	</div>
+
+
+
+	<!-- HET TIEUDEKHOIMENU -->
+	<!-- HET KHOI MENU -->
+	<!-- khuyenmai -->
+	<div class="countdown countdown-container container">
+		<div class="clock row">
+			<div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+				<div class="wrap">
+					<div class="inner">
+						<div id="canvas-days" class="clock-canvas"></div>
+
+						<div class="text dongho">
+							<p class="val">0</p>
+							<p class="type-days type-time">NGÀY</p>
+						</div><!-- /.text -->
+					</div><!-- /.inner -->
+				</div><!-- /.wrap -->
+			</div><!-- /.clock-item -->
+
+			<div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+				<div class="wrap">
+					<div class="inner">
+						<div id="canvas-hours" class="clock-canvas"></div>
+
+						<div class="text dongho">
+							<p class="val">0</p>
+							<p class="type-hours type-time">GIỜ</p>
+						</div><!-- /.text -->
+					</div><!-- /.inner -->
+				</div><!-- /.wrap -->
+			</div><!-- /.clock-item -->
+
+			<div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+				<div class="wrap">
+					<div class="inner">
+						<div id="canvas-minutes" class="clock-canvas"></div>
+
+						<div class="text dongho">
+							<p class="val">0</p>
+							<p class="type-minutes type-time">PHÚT</p>
+						</div><!-- /.text -->
+					</div><!-- /.inner -->
+				</div><!-- /.wrap -->
+			</div><!-- /.clock-item -->
+
+			<div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+				<div class="wrap">
+					<div class="inner">
+						<div id="canvas-seconds" class="clock-canvas"></div>
+
+						<div class="text dongho">
+							<p class="val">0</p>
+							<p class="type-seconds type-time">GIÂY</p>
+							<p class="salemoi"><img src="images/salemoi.png" alt=""></p>
+						</div><!-- /.text -->
+					</div><!-- /.inner -->
+				</div><!-- /.wrap -->
+			</div><!-- /.clock-item -->
+		</div><!-- /.clock -->
+	</div><!-- /.countdown-wrapper -->
+	<!-- endkm -->
+	<!---CÁC KHÓA HỌC-->
+	<div class="search">
+		<div class="icon"></div>
+		<div class="input">
+			<input type="text" placeholder="Tìm kiếm" id="mysearch" name="">
+		</div>
+		<span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+	</div>
+	<div class="learn">
+		<div class="container">
+
+			<p id="cackhoahoc"><b>CÁC KHÓA HỌC GỢI Ý</b></p>>
+
+			<div class="khoachinh">
+				<div class="card" id="khoahoc">
+					<img class="card-img-top" id="hinhkhoahoc"
+						src="https://toplist.vn/images/800px/on-tap-bang-nhieu-hinh-thuc-429629.jpg">
+					<div class="card-body" id="chitietkhoahoc">
+						<h4 class="card-title">Bí quyết ôn tập môn Lịch Sử thi THPT QG
+						</h4>
+						<p class="card-title res">Giáo viên: thầy Nguyễn Mạnh Hưởng<br>Thời
+							lượng: 52 giờ</p>
+						<p class="card-text res">GIÁ GÓI: 486.000 VNĐ</p>
+						<a href="#ex1" rel="modal:open" class="btn btn-primary res" id="dangkingay">CHI TIẾT</a>
+						<a href="cart.html" class="btn btn-primary res" id="dangkingay">ĐĂNG KÝ </a>
+					</div>
+				</div>
+				<div class="card" id="khoahoc">
+					<img class="card-img-top" id="hinhkhoahoc"
+						src="https://i.ytimg.com/vi/Ua0AzQssSxA/maxresdefault.jpg">
+					<div class="card-body" id="chitietkhoahoc">
+						<h4 class="card-title" style="margin-bottom: 5px;">Lịch sử thế giới 1945 - 2000</h4>
+						<p class="card-title" style="margin-bottom: 5px;">Giáo viên: thầy Nguyễn Mạnh Hưởng<br>Thời
+							lượng: 35 giờ</p>
+						<p class="card-text" style="margin-bottom: 5px;">GIÁ GÓI: 350.000 VNĐ</p>
+						<a href="#ex1" rel="modal:open" class="btn btn-primary res" id="dangkingay">CHI TIẾT</a>
+						<a href="cart.html" class="btn btn-primary res" id="dangkingay">ĐĂNG KÝ </a>
+					</div>
+				</div>
+				<div class="card" id="khoahoc">
+					<img class="card-img-top" id="hinhkhoahoc" src="https://moon.vn/baigiangvideo/Image/1691.png">
+					<div class="card-body" id="chitietkhoahoc">
+						<h4 class="card-title" style="margin-bottom: 5px;">Luyện đề thi THPT QG</h4>
+						<p class="card-title" style="margin-bottom: 5px;">Giáo viên: thầy Nguyễn Mạnh Hưởng<br>Thời
+							lượng: 5 giờ</p>
+						<p class="card-text" style="margin-bottom: 5px;">GIÁ GÓI: 190.000 VNĐ</p>
+						<a href="#ex1" rel="modal:open" class="btn btn-primary res" id="dangkingay">CHI TIẾT</a>
+						<a href="cart.html" class="btn btn-primary res" id="dangkingay">ĐĂNG KÝ </a>
+					</div>
+
+				</div>
+				<br><br>
+			</div>
+
+		</div>
+
+		<!-- thông tin chi tiết từng khóa -->
+		<div id="ex1" class="modal ">
+			<div class="container-fluid  wow zoomIn">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="leftContent">
+							<img src="https://toplist.vn/images/800px/on-tap-bang-nhieu-hinh-thuc-429629.jpg" alt=""
+								width="95%">
+
+						</div>
+						<div class="mentor-info">
+							<p>VỀ GIẢNG VIÊN:</p>
+							<span>Từ năm 2008, Thầy Nguyễn Mạnh Hưởng đã tham gia bồi dưỡng kiến thức, hướng dẫn học
+								sinh ôn luyện thi trên truyền hình qua các kênh truyền hình với nhiều chương trình thú
+								vị, bổ ích như: Tiếp sức mùa thi, Thầy Cô chúng ta đã thay đổi, Chinh phục kỳ thi THPT
+								quốc gia…</span>
+
+						</div>
+						<div class="iconItem">
+							<div class="icon"><i class="far fa-clock  " aria-hidden="true">72h</i></div>
+							<div class="icon"><i class="far fa-play ">50</i></div>
+							<div class="icon"><i class="far fa-user " aria-hidden="true">102</i> </div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="khoichitiet">
+							<p class="tenkhoa">KHÓA HỌC CHINH PHỤC KỲ THI ĐẠI HỌC 2021</p>
+							<p class="chitiet">THÔNG TIN CHI TIẾT KHÓA HỌC:</p>
+							<p>🔹 Thứ nhất là khóa Pro S (luyện thi) là khóa cung cấp kiến thức nền tảng, bao gồm cả lớp
+								11 và 12, đây là khóa học đầy đủ nhất, theo các chuyên đề thầy Hưởng đã xây dựng.<br>
+								🔸Thứ 2 là khóa Pro A (luyện đề) bao gồm 20 đề thi theo cấu trúc đề thi của bộ giáo dục,
+								các đề đều có video chữa đề từ 120 đến 150 phút.<br>
+								🔹 Thứ 3 là khóa Pro T (nâng cao, tổng ôn kiến thức) là khóa học nâng cao để tổng hợp và
+								ôn lại kiến thức, dành cho các bạn đã có kiến thức nền tảng.<br>
+								🔸 Thứ 4 là khóa phương pháp ôn luyện: giúp các em có được cách học và phương pháp học.
+							</p>
+							<div class="giatien">
+								<p class="gia">350.000đ</p>
+								<p class="anh"><img
+										src="https://icons.iconarchive.com/icons/custom-icon-design/flatastic-4/512/Sale-icon.png"
+										alt=""></p>
+
+							</div>
+
+						</div>
+						<div class="cartButtom">
+
+							<div class="btn btn-danger btn-block"><a style="color:aliceblue; text-decoration: none;"
+									href="cart.html">MUA NGAY</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- thông tin chi tiết từng khóa -->
+
+		<!---CÁC KHÓA HỌC KHÁC-->
+		<div class="learn2">
+			<div class="container">
+				<p id="cackhoahockhac"><b class="">NHỮNG KHÓA HỌC MỚI RA MẮT NÊN XEM</b></p>
+
+				<div class="khoachinh">
+					<div class="card" id="khoahoc">
+						<img class="card-img-top" id="hinhkhoahoc"
+							src="https://i.ytimg.com/vi/YOqUyp0JhK0/maxresdefault.jpg">
+						<div class="card-body" id="chitietkhoahoc">
+							<h4 class="card-title">Chinh phục kì thi Lịch Sử thi THPT QG
+							</h4>
+							<p class="card-title res">Giáo viên: thầy Nguyễn Mạnh Hưởng<br>Thời
+								lượng: 32 giờ</p>
+							<p class="card-text res">GIÁ GÓI: 315.000 VNĐ</p>
+							<a href="#ex1" rel="modal:open" class="btn btn-primary res" id="dangkingay">CHI TIẾT</a>
+							<a href="cart.html" class="btn btn-primary res" id="dangkingay">ĐĂNG KÝ </a>
+
+						</div>
+					</div>
+					<div class="card" id="khoahoc">
+						<img class="card-img-top" id="hinhkhoahoc"
+							src="https://kenh14cdn.com/thumb_w/660/2020/4/30/photo2020-04-3017-36-56-1588244161075365231467.jpg">
+						<div class="card-body" id="chitietkhoahoc">
+							<h4 class="card-title" style="margin-bottom: -20px;">Trắc nghiệm 40 câu hỏi về Lịch Sử</h4>
+							<p class="card-title" style="margin-bottom: 5px;">Giáo viên: thầy Nguyễn Mạnh Hưởng<br>Thời
+								lượng: 5 giờ</p>
+							<p class="card-text" style="margin-bottom: 5px;">GIÁ GÓI: 150.000 VNĐ</p>
+							<a href="#ex1" rel="modal:open" class="btn btn-primary res" id="dangkingay">CHI TIẾT</a>
+							<a href="cart.html" class="btn btn-primary res" id="dangkingay">ĐĂNG KÝ </a>
+						</div>
+					</div>
+					<div class="card" id="khoahoc">
+						<img class="card-img-top" id="hinhkhoahoc"
+							src="https://cdn.vietnammoi.vn/zoom/320_214/stores/news_dataimages/tuepd/122018/10/15/croped/2442_thay_huong.jpg">
+						<div class="card-body" id="chitietkhoahoc">
+							<h4 class="card-title" style="margin-bottom: 5px;">Lịch sử thế giới TK XX</h4>
+							<p class="card-title" style="margin-bottom: 5px;">Giáo viên: thầy Nguyễn Mạnh Hưởng<br>Thời
+								lượng: 3 giờ</p>
+							<p class="card-text" style="margin-bottom: 5px;">GIÁ GÓI: 180.000 VNĐ</p>
+							<a href="#ex1" rel="modal:open" class="btn btn-primary res" id="dangkingay">CHI TIẾT</a>
+							<a href="cart.html" class="btn btn-primary res" id="dangkingay">ĐĂNG KÝ </a>
+						</div>
+					</div>
+					<br><br><br><br><br>
+				</div>
+			</div>
+
+
+			<!-- footer--- -->
+			<div class="footerauto wow fadeInUp">
+				<footer>
+					<div class="main-content">
+						<div class="left box">
+							<h2>về chúng tôi</h2>
+							<div class="content">
+								<p class="mobile">Trang web cung cấp những kiến thức lịch sử chất lượng, đáng tin cậy
+									hàng đầu. Đặc biệt trang web học tập sẽ giúp bạn trao dồi thêm kỹ năng và sáng tạo.
+									Cùng chào đón điều thú vị đến từ "Lịch Sử Việt Nam".</p>
+								<div class="social">
+									<a href=""><i class="fab fa-facebook"></i></a>
+									<a href="#"> <i class="fab fa-twitter" aria-hidden="true"></i></a>
+									<a href=""> <i class="fab fa-instagram"></i></a>
+									<a href=""> <i class="fab fa-youtube"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="center box">
+							<h2>địa chỉ</h2>
+							<div class="content sizenew">
+								<div class="place">
+									<i class="fas fa-paper-plane"></i>
+
+									<span class="text">470 Trần Đại Nghĩa, Ngũ Hành Sơn, Đà Nẵng</span>
+								</div>
+								<div class="phone">
+									<i class="fas fa-phone"></i>
+									<span class="text">(+84) 323 340 0543</span>
+								</div>
+								<div class="email">
+									<i class="fas fa-envelope"></i>
+									<span class="text">SwordBWD@gmail.com</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="right box">
+							<h2>LIÊN HỆ</h2>
+							<div class="content mobile2">
+								<form action="#">
+									<div class="email">
+										<div class="text">Email *</div>
+										<input type="email" required>
+									</div>
+									<div class="msg">
+										<div class="text">Message *</div>
+										<textarea rows="2" cols="25" required></textarea>
+									</div>
+									<div class="btn mobile3">
+										<button class="submit" type="submit">GỬI NGAY</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="bottom">
+						<center>
+							<span class="credit">Bản quyền thuộc team <a href="">Sword</a> | </span>
+							<i class="fa fa-copyright"></i><span> 2021 All rights reserved.</span>
+						</center>
+					</div>
+				</footer>
+			</div><!-- end footer--- -->
+
+			<a class="gotop" href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i>
+			</a>
+		</div>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> -->
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script type="text/javascript" src="vendor/kinetic.js"></script>
+		<script type="text/javascript" src="vendor/jquery.final-countdown.js"></script>
+		
+		<!-- ============searchbox========= -->
+		<script>
+			const icon = document.querySelector('.icon');
+			const search = document.querySelector('.search');
+			icon.onclick = function(){
+				search.classList.toggle('active')
+			}
+		</script>
+				<!-- ============searchbox========= -->
+
+
+
+				
+		<!-- // =========ĐỒNG HỒ=========== -->
+		<script>
+			$('document').ready(function () {
+				'use strict';
+
+				$('.countdown').final_countdown({
+					'start': 1362139200,
+					'end': 1388461320,
+					'now': 1387461319
+				});
+			});
+		</script>
+		<!-- // =========ĐỒNG HỒ=========== -->
+
+
+
+		<script>
+			$('a.open-modal').click(function (event) {
+				$(this).modal({
+					fadeDuration: 250
+				});
+				return false;
+			});</script>
+		<!-- ===========CHAT========== -->
+
+		<!-- Messenger Plugin chat Code -->
+		<div id="fb-root"></div>
+
+		<!-- Your Plugin chat code -->
+		<div id="fb-customer-chat" class="fb-customerchat">
+		</div>
+
+		<script>
+			var chatbox = document.getElementById('fb-customer-chat');
+			chatbox.setAttribute("page_id", "106822430997389");
+			chatbox.setAttribute("attribution", "biz_inbox");
+
+			window.fbAsyncInit = function () {
+				FB.init({
+					xfbml: true,
+					version: 'v11.0'
+				});
+			};
+
+			(function (d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<!-- ===========CHAT========== -->
+
+</body>
+
+</html>
